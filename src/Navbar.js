@@ -5,7 +5,6 @@ function Navbar() {
         <nav>
             <ul>
                 <li>Home</li>
-                <li>Test</li>
                 <li>Contact</li>
                 <li>About</li>
             </ul>
