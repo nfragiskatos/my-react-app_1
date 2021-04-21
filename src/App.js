@@ -10,6 +10,7 @@ import './App.css';
 function App() {
   return (
     <div>
+      <Counter step={5}/>
       <Counter/>
       <Navbar/>
       <Greeter name="Karen" age="62" excitement={4}/>
