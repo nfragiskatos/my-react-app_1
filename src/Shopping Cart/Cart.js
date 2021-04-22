@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import CartItem from './CartItem'
+import CartItem from './CartItem';
+import './Cart.css';
 
 function Cart({initialItems}) {
 
@@ -19,13 +20,13 @@ function Cart({initialItems}) {
     ), 0).toFixed(2)
     return (
         <div className="Cart">
-            <h1>I am cart</h1>
+            <h1 className="Cart-title">Shopping Cart</h1>
             <div className="Cart-items">
                 {items.map(item => (
                     <CartItem key={item.id} updateQty={updateQty} {...item}/>
                 ))}
             </div>
-            <h2>
+            <h2 className="Cart-total">
                 Grand Total: ${grandTotal}
             </h2>
         </div>
